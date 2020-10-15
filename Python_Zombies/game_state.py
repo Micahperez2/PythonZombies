@@ -1,3 +1,4 @@
+#Micah Perez - Python Zombies - Created October 1st 2020
 from enum import Enum
 
 class GameState(Enum):

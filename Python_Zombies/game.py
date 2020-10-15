@@ -10,11 +10,13 @@ enemies = [] #enemies array
 
 #Game Class
 class Game:
+    #Init function for game state
     def __init__(self, screen):
         self.screen = screen
         self.objects= []
         self.game_state = GameState.NONE
 
+    #Create player and give them starting parameters
     def setUp(self):
         player = Player(40,30,'E',10)
         self.player = player
@@ -22,6 +24,7 @@ class Game:
         print("do set up")
         self.game_state = GameState.RUNNING
 
+    #Update Function - Screen, Player, and Enemy Update
     def update(self):
         self.screen.fill(cg.BLACK)
         print("update")
@@ -45,6 +48,7 @@ class Game:
             e.render(self.screen)
 
 
+    #In game is out of events then quit game, also notice if a bullet has been shot
     def handle_events(self):
         for event in pg.event.get():
             if event.type == pg.QUIT:

@@ -1,3 +1,4 @@
+#Micah Perez - Python Zombies - Created October 1st 2020
 import pygame as pg
 import config as cg
 from game_state import GameState
@@ -89,6 +90,7 @@ class Bullet:
     def render(self, screen):
         pg.draw.rect(screen, cg.RED, (self.position_bullet[0]*cg.SCALE, self.position_bullet[1]*cg.SCALE, cg.SCALE, cg.SCALE), 2)
 
+#Enemy Class created with respect to players location 
 class Enemy:
     def __init__(self, x_enemy, y_enemy, x_player, y_player, health):
         print("enemy created")
@@ -106,6 +108,7 @@ class Enemy:
     def change_y(self):
         self.y_direction = (self.y_direction * -1)
 
+    #Enemy Movement (They bounce of walls where the player does not)
     def move(self):
         if (self.position_enemy[0] <= 0):
             self.change_x()
