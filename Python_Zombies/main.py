@@ -23,3 +23,4 @@ while game.game_state == GameState.RUNNING:
     game.update()
     pg.display.flip()
 
+

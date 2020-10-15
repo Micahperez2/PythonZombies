@@ -1,3 +1,4 @@
+#Micah Perez - Python Zombies - Created October 1st 2020
 import pygame as pg
 import config as cg
 from player import Player, Bullet, Enemy
