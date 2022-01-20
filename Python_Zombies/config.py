@@ -12,3 +12,6 @@ SPEED = -1
 #window height
 SCREEN_HEIGHT = 600
 SCREEN_WIDTH = 800
+
+#for font
+FONT_SIZE = 64

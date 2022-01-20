@@ -125,3 +125,14 @@ class Enemy:
 
     def render(self, screen):
         pg.draw.rect(screen, cg.GREEN, (self.position_enemy[0]*cg.SCALE, self.position_enemy[1]*cg.SCALE, cg.SCALE, cg.SCALE), 4)
+
+#Class to display the current score of the game
+#class Score:
+#    def __init__(self):
+#        self.health = 0;
+#        self.accuracy = 100;
+#        self.enemies_killed = 0;
+#
+#    def render(self, screen):
+#        pg.draw.rect(screen, cg.RED, (20, 20, cg.SCALE, cg.SCALE), 4)
+

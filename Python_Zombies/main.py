@@ -19,7 +19,7 @@ game.setUp()
 
 while game.game_state == GameState.RUNNING:
     #Change the clock tick to get a different speed of Game
-    clock.tick(50)
+    clock.tick(500)
     game.update()
     pg.display.flip()
 
